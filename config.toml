@@ -3,10 +3,10 @@
 
 # The URL of your website.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "/"
+baseurl = "http://localhost:1313/"
 
 # Title of your site
-title = "Academic"
+title = "Site personnel"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
@@ -26,7 +26,7 @@ disqusShortname = ""
 googleAnalytics = ""
 
 # Default language to use (if you setup multilingual support)
-defaultContentLanguage = "en"
+defaultContentLanguage = "fr"
 hasCJKLanguage = false  # Set `true` for Chinese/Japanese/Korean languages.
 defaultContentLanguageInSubdir = false
 
@@ -54,19 +54,19 @@ enableGitInfo = false
   font = "default"
 
   # Your details.
-  name = "Lena Smith"
-  role = "Professor of Artificial Intelligence"
+  name = "ET-TOLBA Mohamed"
+  role = "Enseignant chercheur"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Stanford University", url = "" } ]
+  organizations = [ { name = "Institut National des Postes et Télécommunications", url = "www.inpt.ac.ma" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "test@example.org"
-  address = "Building 1 Room 1, Stanford University, California, 90210, USA"
-  office_hours = "Monday 10:00 to 13:00 or email for appointment"
-  phone = "888 888 88 88"
+  avatar = "ettolba.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  email = "ettolba@inpt.ac.ma"
+  address = "2, av ALLal EL Fassi, Madinat AL Irfane, Rabat, MAROC"
+  office_hours = "Lundi 10:00 to 13:00 ou rendez-vous par email"
+  phone = "(212) 538 002 849"
   skype = "echo123"
   telegram = ""
 
@@ -226,7 +226,7 @@ enableGitInfo = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:test@example.org"
+    link = "mailto:ettolba@inpt.ac.ma"
 
   [[params.social]]
     icon = "twitter"
@@ -294,3 +294,51 @@ enableGitInfo = false
 # Configure the English version of the website.
 [Languages.en]
   languageCode = "en-us"
+  title = "Personal website"
+  name = "ET-TOLBA Mohamed"
+  role = "Professor"
+  organizations = [ { name = "National Institute of Posts and Telecommunications", url = "www.inpt.ac.ma" } ]
+  address = "2, street ALLal EL Fassi, Madinat AL Irfane, Rabat, MAROC"
+  office_hours = "Monday 10:00 to 13:00 or email for appointment"
+
+[Languages.fr]
+languageCode = "fr-fr"
+publication_types = [
+    'Uncategorized',  # 0
+    'Conference paper',  # 1
+    'Article de journal',  # 2
+    'Manuscrit',  # 3
+    'Rapportst',  # 4
+    'Livres',  # 5
+    'Section des livres'  # 6
+  ]
+
+[[Languages.fr.menu.main]]
+  name = "A propos"
+  url = "#about"
+  weight = 1
+
+[[Languages.fr.menu.main]]
+  name = "Publications"
+  url = "#publications_selected"
+  weight = 2
+
+[[Languages.fr.menu.main]]
+  name = "Posts"
+  url = "#posts"
+  weight = 3
+
+[[Languages.fr.menu.main]]
+  name = "Projets"
+  url = "#projects"
+  weight = 4
+
+[[Languages.fr.menu.main]]
+  name = "Enseignement"
+  url = "#teaching"
+  weight = 5
+
+[[Languages.fr.menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 6
